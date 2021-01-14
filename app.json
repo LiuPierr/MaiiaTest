@@ -1,0 +1,12 @@
+{
+  "name": "MaiiaTest",
+  "displayName": "MaiiaTest",
+  "expo": {
+    "name": "MaiiaTest",
+    "slug": "MaiiaTest",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
