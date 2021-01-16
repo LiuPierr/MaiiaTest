@@ -1,8 +1,17 @@
-import { registerRootComponent } from 'expo';
+import { AppRegistry } from 'react-native'
+import React from 'react'
+import { Provider } from 'react-redux'
+import Home  from './src/scenes/Home'
+import configureStore from './src/store/store'
+import { name as appName } from './app.json'
 
-import App from './App';
+const store = configureStore()
 
-// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
-// It also ensures that whether you load the app in the Expo client or in a native build,
-// the environment is set up appropriately
-registerRootComponent(App);
+const App = () => (
+    <Provider store={store}>
+        <Home />
+    </Provider>
+)
+
+AppRegistry.registerComponent(appName, () => App);
+
