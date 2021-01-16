@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "jsx": "react-native",
+    "lib": ["es6"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "allowUnreachableCode": false,
+    "noImplicitAny": true
+  },
+  "exclude": [
+    "node_modules",
+    "android",
+    "ios",
+    "babel.config.js"
+  ]
+}
