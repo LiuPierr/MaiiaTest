@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {View, StyleSheet, Image} from "react-native"
-import {Button} from "../components/Button"
+import {Button} from "@components/Button"
 
 interface Props {
     navigation: Navigation

@@ -15,7 +15,7 @@ export default class App extends React.PureComponent {
                 <Stack.Navigator>
                     <Stack.Screen
                         name="Home"
-                        component={({ route, navigation }) =>  {return (<Home navigation={navigation}/>)}}
+                        component={Home}
                     />
                     <Stack.Screen
                         name="List"
