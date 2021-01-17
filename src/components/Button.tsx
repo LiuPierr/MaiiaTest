@@ -2,15 +2,14 @@ import * as React from 'react'
 import {Pressable, StyleSheet, Text} from "react-native"
 
 interface Props {
-    onPress: () => {}
+    onPress: () => void
 }
 
-export const Button = ({ onPress }: Props) => {
+export const Button = ({onPress}: Props) => {
     return (
         <Pressable onPress={onPress}
-                   android_ripple={{
-                   }}
-                   style={({ pressed }) => [
+                   android_ripple={{}}
+                   style={({pressed}) => [
                        {
                            backgroundColor: pressed
                                ? 'rgb(210, 230, 255)'
@@ -25,10 +24,10 @@ export const Button = ({ onPress }: Props) => {
 
 const styles = StyleSheet.create({
     container: {
-        padding : 15,
-        borderRadius:25
+        padding: 15,
+        borderRadius: 25
     },
     text: {
-        color:"white"
+        color: "white"
     },
 })

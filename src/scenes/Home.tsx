@@ -1,24 +1,29 @@
 import * as React from 'react'
-import { View, StyleSheet, Image} from "react-native"
-import { Button } from "../components/Button"
+import {View, StyleSheet, Image} from "react-native"
+import {Button} from "../components/Button"
 
-export default class Home extends React.PureComponent<void, void> {
-
-    onPressHome = () => {
-    }
-
-    render() {
-        return (
-            <View style={styles.appContainer}>
-                <Image
-                    style={styles.logo}
-                    resizeMode={"contain"}
-                    source={require('../images/MaiiaLogo.png')}/>
-                    <Button onPress={this.onPressHome}/>
-            </View>
-        )
-    }
+interface Props {
+    navigation: Navigation
 }
+
+const Home = ({navigation}: Props) => {
+
+    const onPressHome = () => {
+        navigation.navigate("List")
+    }
+
+    return (
+        <View style={styles.appContainer}>
+            <Image
+                style={styles.logo}
+                resizeMode={"contain"}
+                source={require('../images/MaiiaLogo.png')}/>
+            <Button onPress={onPressHome}/>
+        </View>
+    )
+}
+
+export default Home
 
 const styles = StyleSheet.create({
     appContainer: {
@@ -27,7 +32,8 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     logo: {
-        width: "50%",
-        height:"50%"
+        width: 200,
+        height: 80,
+        marginBottom: 25
     }
 })
