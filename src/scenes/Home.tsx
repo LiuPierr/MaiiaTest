@@ -17,7 +17,7 @@ const Home = ({navigation}: Props) => {
             <Image
                 style={styles.logo}
                 resizeMode={"contain"}
-                source={require('../images/MaiiaLogo.png')}/>
+                source={require('@images/MaiiaLogo.png')}/>
             <Button onPress={onPressHome}/>
         </View>
     )
