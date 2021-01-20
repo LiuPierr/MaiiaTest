@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {Pressable, StyleSheet, Text} from "react-native"
+import {Colors} from "@utils/colors"
 
 interface Props {
     onPress: () => void
@@ -13,7 +14,7 @@ export const Button = ({onPress}: Props) => {
                        {
                            backgroundColor: pressed
                                ? 'rgb(210, 230, 255)'
-                               : '#fd6c9e'
+                               : Colors.pink
                        },
                        styles.container
                    ]}>
